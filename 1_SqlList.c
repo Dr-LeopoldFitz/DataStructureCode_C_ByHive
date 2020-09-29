@@ -5,7 +5,7 @@
  */
 
 /*ADT_Of_SqList*/
-// int IninList(SqList *L)
+// int InitList(SqList *L)
 // int ClearList(SqList *L)
 // int DestroyList(SqList *L)
 // int ListEmpty(SqList L)
