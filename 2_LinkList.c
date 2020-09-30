@@ -222,10 +222,12 @@ void MergeList(LinkList* La,LinkList* Lb,LinkList* Lc)
         }
     }
      pc->next=(pa?pa:pb);
-    // free(La);
-    DestroyList(La);
-    // free(Lb);
-    DestroyList(Lb);
+
+    // DestroyList(La);
+    // DestroyList(Lb);
+    // 起初写的时候犯了如上注释的错误，
+    // 忘记了实际上Lc只新申请了一个头结点，
+    // 实际数据还在La,Lb里没有移动，不可销毁La,Lb
 }
 
 int main()
